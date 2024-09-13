@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+
+body {
+ font-family: Oswald;
+ margin: 0;
+}
+
+h1 {
+ text-align: center;
+ border-bottom: 1px solid #000;
+ background-color: #bbb;
+ text-shadow: 1px 1px #fff;
+ margin: 0;
+ margin-bottom: 40px;
+}
+
+fieldset {
+ width: 50%;
+ margin: auto;
+ box-shadow: 5px 5px 5px rgba(200, 200, 200, 0.7);
+ border-radius: 10px;
+ background-color:rgba(200, 200, 200, 0.3);
+ padding-top: 30px;
+ padding-left: 30px;
+}
+
+label.alinha {
+ width: 260px;
+ display: inline-block;
+ text-align: right;
+ margin-bottom: 10px;
+}
+
+button {
+ width: 280px;
+ height: 50px;
+ font-weight: bold;
+ font-size: 17px;
+ margin: auto;
+ display: block;
+}
+
+input[type="text"] {
+ width: 270px;
+}
+
+span {
+ color: #4682B4;
+ font-weight: bold;
+ font-style: italic;
+}
+
+p {
+ border: 1px solid #666;
+ width: 50%;
+ background-color:rgba(200, 200, 200, 0.3);
+ padding: 20px;
+ margin: 20px auto;
+}

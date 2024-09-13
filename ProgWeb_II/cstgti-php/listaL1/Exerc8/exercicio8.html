@@ -1,0 +1,27 @@
+<!DOCTYPE html> 
+<html lang="pt-BR"> 
+<head> 
+  <meta charset="utf-8"> 
+  <title> Fundamentos do PHP </title> 
+  <link rel="stylesheet" href="formata-formulario.css">
+</head> 
+
+<body> 
+ <h1> Fundamentos do PHP - exercício 8 - listaL1 </h1>
+
+ <form action="exercicio8.php" method="post">
+  <fieldset>
+   <legend> Supermercado AAA - processamento de vendas </legend>
+
+   <label class="alinha"> Forneça o valor da compra: </label>
+   <input type="number" name="valor-compra" min="0" step="0.01"> <br> <br>
+
+   <input type="checkbox" name="modalidade-pagamento[]" value="sim"> <label> Marque esta opção se o cliente pagou a compra com cartão </label> <br> <br>
+
+   <input type="checkbox" name="entrega-domicilio[]" value="sim"> <label> Marque esta opção se o cliente solicitou entrega da compra a domicílio </label> <br>
+     
+   <button> Processar dados da venda </button>
+  </fieldset>
+ </form>    
+</body> 
+</html> 

@@ -1,0 +1,28 @@
+<!DOCTYPE html> 
+<html lang="pt-BR"> 
+<head> 
+  <meta charset="utf-8"> 
+  <title> Arrays unidimensionais com PHP </title> 
+  <link rel="stylesheet" href="formata-formulario.css">
+</head> 
+
+<body> 
+ <h1> Vetores em PHP - exercício 8 - listaL2 </h1>
+
+ <form action="exercicio8.php" method="post">
+  <fieldset>
+   <legend> Simulando um carrinho de compras com PHP </legend>
+   <!--aluno1-->
+   <label> Selecione os produtos para a compra: </label> <br>
+
+   <input type="checkbox" name="produtos[]" value="Dipirona"> <label> Dipirona </label> <br>
+   <input type="checkbox" name="produtos[]" value="Rivotril"> <label> Rivotril </label> <br>
+   <input type="checkbox" name="produtos[]" value="Luftal"> <label> Luftal </label> <br>   <br>
+
+   <input type="checkbox" name="faixa-etaria[]" value="acima de 59 anos"> <label> Marque esta opção se o cliente tem 60 anos ou mais </label> <br>
+
+   <button> Comprar </button>
+  </fieldset>
+ </form>    
+</body> 
+</html> 

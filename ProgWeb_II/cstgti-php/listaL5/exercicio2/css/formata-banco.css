@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz&display=swap');
+
+body {
+ font-family: "Yanone Kaffeesatz";
+ margin: 0;
+}
+
+h1 {
+ margin: 0;
+ text-align: center;
+ border-bottom: 1px solid #777;
+ background-color: #9bd770;
+ box-shadow: 0 0 5px 5px #1b3409;
+ text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.5);
+ margin-bottom: 20px;
+ position: sticky; /*fixa o texto no h1 no topo da página, mesmo quando aparece a barra de rolagem vertical*/
+ top: 0;
+}
+
+label.alinha {
+ width: 160px;
+ display: inline-block;
+ margin-bottom: 15px;
+ text-align: right;
+}
+
+
+input, button {
+ font-family: "Yanone Kaffeesatz";
+}
+
+fieldset {
+ width: 50%;
+ margin: 30px auto;
+ padding-left: 30px;
+ padding-top: 30px;
+ border-radius: 10px;
+ background: #ebf7e3;
+ box-shadow: 5px 5px 5px #1b3409;
+}
+
+button {
+ font-size: 18px;
+ height: 40px;
+ margin: 30px auto;
+ display: block;
+ margin-bottom: 5px;
+}
+
+
+p {
+ width: 53%;
+ border: 1px solid #777;
+ margin: 20px auto;
+ text-align: center;
+ background: #bfe7a2;
+}
+
+table {
+ width: 53%;
+ border: 1px solid #777;
+ border-collapse: collapse ;
+ background: #ebf7e3;
+ margin: 30px auto;
+}
+
+th, td {
+ border: 1px solid #777; 
+}
+
+th {
+ background: #1b3409;
+ color: #fff;
+}
+
+td {
+ padding-left: 15px;
+}
+
+span {
+ color: #0f083b;
+ font-weight: bold;
+ font-style: italic;
+ text-decoration: underline; /*sublinhado*/
+}
+
+textarea {
+ resize: none;
+ font-family: "Yanone Kaffeesatz";
+ width: 200px;
+ height: 100px;
+ vertical-align: top; /*controla o alinhamento do texto, em relação à caixa textarea, na vertical*/
+}
+
+select {
+ margin-top: 30px;
+}
