@@ -1,0 +1,29 @@
+<!DOCTYPE html> 
+<html lang="pt-BR"> 
+<head> 
+  <meta charset="utf-8"> 
+  <title> PHP </title> 
+  <link rel="stylesheet" href="exerc9.css">
+</head> 
+
+<body> 
+ <h1> Prática com PHP - interação com formulários - ListaL3 - exercício 9 </h1>
+
+ <form method="post" action="recebe-dados.php">
+  <fieldset>
+   <legend> Lojas AAA - Processamento de vendas </legend>
+
+   <label> Forneça o valor da compra: </label>
+   <input type="number" name="valor-compra"  min="0" step="0.01" autofocus> <br> <br>
+
+   <label> Escolha a forma de pagamento utilizada pelo cliente: </label> <br>
+   <input type="radio" name="forma-pagamento" value="À vista"> <label> À vista </label> <br>
+   <input type="radio" name="forma-pagamento" value="A prazo"> <label> A prazo </label> <br> <br>
+
+   <input type="checkbox" name="pagamento-cartao" value="Sim"> <label> Marque esta opção se o cliente efetuou o pagamento com cartão bandeira Visa </label> <br>    
+      
+   <button> Processar dados da compra </button>
+  </fieldset>
+ </form>
+</body> 
+</html> 

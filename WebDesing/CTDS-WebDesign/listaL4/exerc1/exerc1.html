@@ -1,0 +1,25 @@
+<!DOCTYPE html> 
+<html lang="pt-BR"> 
+<head> 
+  <meta charset="utf-8"> 
+  <title> Fundamentos do JavaScript </title>   
+</head> 
+
+<body> 
+ <!--confira, abaixo, exemplos do uso de JS in-line-->
+ <h1 onmouseover="this.style.color = 'green';" style="border: 2px solid blue"; onmouseout="this.style.color = 'black'";> Fundamentos do JavaScript - inserção no formato in-line </h1>
+ <form>
+  <button type="button" onclick="alert('Olá, mundo! Bem-vindos à Programação em JavaScript!');"> Executar olá, mundo! com JavaScript in-line </button>
+ </form>
+
+ <!--JS incorporado-->
+ <script>
+  //nesta área, devemos ter somente comandos da linguagem JavaScript
+  let aluno = "Maria das Graças";
+  let mediaWebDesign = 6.2;  
+ </script>  
+ 
+ <!--Os dois métodos anteriores têm diversos inconvenientes: o principal deles se refere à mudança de código em várias páginas HTML. Para resolvermos este problema, utilizados JS externo-->
+ <script src="externo.js"></script> <!--Note que, dentro da tag script, não devemos colocar absolutamente nada, nem mesmo espaço em branco-->
+</body> 
+</html> 

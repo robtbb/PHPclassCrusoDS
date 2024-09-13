@@ -1,0 +1,29 @@
+<!DOCTYPE html> 
+<html lang="pt-BR"> 
+<head> 
+  <meta charset="utf-8"> 
+  <title> PHP </title> 
+  <link rel="stylesheet" href="exerc2.css">
+</head> 
+
+<body> 
+ <h1> Prática com PHP - interação com formulários - ListaL3 - exercício 2 </h1>
+
+ <form method="post" action="recebe-dados.php">
+  <fieldset>
+   <legend> Processamento de dados da viagem da Maria </legend>
+
+   <label class="alinha"> Distância da viagem (em km): </label>
+   <input type="number" name="distancia" min="0" step="0.1"> <br>
+   
+   <label class="alinha"> Consumo do automóvel (em litros): </label>
+   <input type="number" min="0" step=".1" name="consumo"> <br>
+
+   <label class="alinha"> Preço do combustível (em R$): </label>
+   <input type="number" min="0" max="100" name="preco" step="0.01"> <br>
+
+   <button> Calcular despesas da viagem </button>
+  </fieldset>
+ </form>
+</body> 
+</html> 

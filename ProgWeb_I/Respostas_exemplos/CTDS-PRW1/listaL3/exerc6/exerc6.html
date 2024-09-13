@@ -1,0 +1,26 @@
+<!DOCTYPE html> 
+<html lang="pt-BR"> 
+<head> 
+  <meta charset="utf-8"> 
+  <title> PHP </title> 
+  <link rel="stylesheet" href="exerc6.css">
+</head> 
+
+<body> 
+ <h1> Prática com PHP - interação com formulários - ListaL3 - exercício 6 </h1>
+
+ <form method="post" action="recebe-dados.php">
+  <fieldset>
+   <legend> Processamento de vendas </legend>
+
+   <label class="alinha"> Forneça o valor da compra: </label>
+   <input type="number" name="valor-compra"  min="0" step="0.01"> <br>
+
+   <label class="alinha"> Forneça o valor do percentual de comissão do vendedor: </label>
+   <input type="number" name="percentual-comissao"  min="0" step="0.1" max="100"> <label>%</label> <br>
+      
+   <button> Processar dados da compra </button>
+  </fieldset>
+ </form>
+</body> 
+</html> 

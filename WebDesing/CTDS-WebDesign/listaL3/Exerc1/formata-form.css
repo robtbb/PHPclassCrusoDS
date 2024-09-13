@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Gupter&family=Roboto+Slab&display=swap');
+
+body {
+ margin: 0;
+ font-family: "Roboto Slab";
+}
+
+/*Cuidado: alguns elementos de formulário não obedecem à definição de fonte no copro da página. Devemos configurá-los individualmente*/
+input, textarea, button {
+ font-family: "Roboto Slab"; 
+}
+
+h2 {
+ margin: 0;
+ text-align: center;
+ margin-bottom: 40px;
+ border-bottom: 1px solid #012214;
+ background-color: #84D0B1;
+}
+
+fieldset {
+ width: 50%;
+ background-image: url(https://st4.depositphotos.com/1047356/22586/i/450/depositphotos_225869028-stock-photo-pattern-made-white-beige-geometric.jpg); 
+ border-radius: 10px;
+ box-shadow:  5px 5px 5px #86abcb;
+ margin: auto;
+ padding-left: 25px;
+ padding-top: 18px;
+}
+
+fieldset.muda-margem { 
+ margin-bottom: 30px;
+}
+
+label.alinha {
+ width: 250px;
+ display: inline-block; /*para atingirmos, com CSS, o alinhamento proposto no modelo, declaramos o label como elemento intermediário (inline-block), entre nível de bloco e inline, de forma a obrigar cada label a ter uma largura definida,  aceitando as caixas de dados na mesma direção horizontal*/
+ text-align: right;
+ margin-bottom: 10px;
+}
+
+/*Usando CSS avançado para indetificarmos um elemento de forma única, sem o uso de class ou id, por meio de seletores de atributos*/
+input[name="nome-usuario"] {
+ width: 300px;
+}
+
+textarea {
+ resize: none; /*desativar a alça de redimensionamento*/
+ width: 25%;
+ height: 80px;
+}
+
+button {
+ margin: auto; /*para o botão, que é inline, obedecer à centralização, devemos convertê-lo para nível de bloco*/
+ display: block;
+ margin-top: 20px;
+ margin-bottom: 20px;
+ font-size: 20px;
+ font-weight: bold;
+ height: 40px;
+}

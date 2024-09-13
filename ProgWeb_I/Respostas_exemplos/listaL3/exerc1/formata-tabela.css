@@ -1,0 +1,61 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Blinker&family=Roboto+Condensed&display=swap');
+
+body {
+ font-family: verdana, "Trebuchet MS"; /*indicar uma fonte personalizada*/
+ font-family: "Roboto Condensed";
+ margin: 0;
+}
+
+h1 {
+ font-family: Blinker;
+ border-bottom: 1px solid green;
+ text-align: center;
+ background-color: #D6BD98;
+ margin: 0;
+ margin-bottom: 30px;
+}
+
+table {
+ width: 600px;
+ border: 1px solid green;
+ margin: auto;
+ height: 400px;
+ font-size: 18px;
+ border-spacing: 0;
+ box-shadow: 5px 5px 8px #1A3636;
+}
+
+th, td {
+ border: 1px solid green;
+}
+
+td {
+ text-align: center;
+}
+
+/*note o uso do seletor class na regra abaixo, para especificar somente uma célula td que irá receber a devida formatação*/
+td.formata-texto {
+ font-weight: bold; /*negrito*/
+ text-decoration: underline; /*sublinhado*/
+}
+
+/*note o uso do seletor id na regra abaixo, para especificar somente um célula td que irá receber a devida formatação*/
+td#troca-cor-fonte {
+ color: red;
+ font-weight: bold;
+}
+
+td.formata-fundo {
+ background-color: #677D6A;
+ color: white;
+}
+
+th {
+ background-color: #D6BD98;
+}
+
+caption {
+ margin-bottom: 8px;
+}
+

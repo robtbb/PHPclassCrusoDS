@@ -1,0 +1,31 @@
+<!DOCTYPE html> 
+<html lang="pt-BR"> 
+<head> 
+  <meta charset="utf-8"> 
+  <title> PHP </title> 
+  <link rel="stylesheet" href="exerc7.css">
+</head> 
+
+<body> 
+ <h1> Prática com PHP - interação com formulários - ListaL3 - exercício 7 </h1>
+
+ <form method="post" action="recebe-dados.php">
+  <fieldset>
+   <legend> Supermercados AAA - Processamento de vendas </legend>
+
+   <label> Forneça o valor da compra: </label>
+   <input type="number" name="valor-compra"  min="0" step="0.01"> <br> <br>
+
+   <label> O cliente pagou a compra com cartão? </label> <br>
+   <input type="radio" name="forma-pagamento" value="Sim"> <label> Sim </label> <br>
+   <input type="radio" name="forma-pagamento" value="Não"> <label> Não </label> <br> <br>
+
+   <label> O cliente solicitou entrega a domicílio? </label> <br> 
+   <input type="radio" name="forma-entrega" value="Sim"> <label> Sim </label> <br>
+   <input type="radio" name="forma-entrega" value="Não"> <label> Não </label> <br>    
+      
+   <button> Processar dados da compra </button>
+  </fieldset>
+ </form>
+</body> 
+</html> 

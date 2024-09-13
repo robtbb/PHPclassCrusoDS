@@ -1,0 +1,36 @@
+<!DOCTYPE html> 
+<html lang="pt-BR"> 
+<head> 
+  <meta charset="utf-8"> 
+  <title> PHP </title> 
+  <link rel="stylesheet" href="exerc1.css">
+</head> 
+
+<body> 
+ <h1> Prática com PHP - interação com formulários - ListaL3 - exercício 1 </h1>
+
+ <form method="post" action="recebe-dados.php">
+  <fieldset>
+   <legend> Processamento de notas </legend>
+
+   <label class="alinha"> Nome do aluno: </label>
+   <input type="text" name="nome-aluno" autofocus> <br>
+   
+   <label class="alinha"> Nota 1: </label>
+   <input type="number" min="0" max="10" step=".1" name="nota1"> <br>
+
+   <label class="alinha"> Peso 1: </label>
+   <input type="number" min="0" max="10" name="peso1"> <br>
+
+   <label class="alinha"> Nota 2: </label>
+   <input type="number" min="0" max="10" step=".1" name="nota2"> <br>
+
+   <label class="alinha"> Peso 2: </label>
+   <input type="number" min="0" max="10" name="peso2"> <br>
+
+
+   <button> Calcular média do aluno </button>
+  </fieldset>
+ </form>
+</body> 
+</html> 

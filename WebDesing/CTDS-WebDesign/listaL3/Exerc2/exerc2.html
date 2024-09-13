@@ -1,0 +1,40 @@
+<!DOCTYPE html> 
+<html lang="pt-BR"> 
+<head> 
+  <meta charset="utf-8"> 
+  <title> Formulários com HTML5 e CSS3 </title> 
+  <link rel="stylesheet" href="formata-formulario.css">
+</head> 
+
+<body> 
+ <h1> Formulário em HTML5 - coleta de informações pessoais </h1>
+ <form action="recebe-dados.php" method="post">
+  <fieldset>
+   <legend> Informações pessoais </legend>
+  
+   <!--observe, abaixo, o uso do atributo for para o label e o correspondente atributo id para a caixa input. Esta técnica favorece a acessibilidade do formulário-->
+   <label class="alinha" for="nome-usuario"> Nome completo: </label>
+   <input type="text" name="nome-usuario" autofocus placeholder="Seu nome aqui..." id="nome-usuario"> <br>
+
+   <label class="alinha" for="seu-email"> E-mail: </label>
+   <input type="email" name="e-mail" id="seu-email"> <br>
+
+   <label class="alinha"> Data de nascimento: </label>
+   <input type="date" name="data-aniversario"> <br>
+
+   <label class="alinha"> Login: </label>
+   <input type="text" name="login"> <label class="muda-cor"> * </label> <br>
+
+   <label class="alinha"> Senha: </label>
+   <input type="password" name="senha"> <label class="muda-cor"> * </label> <br> <br>
+
+   <label> Faixa etária: </label> <br>
+   <input type="radio" name="faixa-etaria" value="Menor ou igual a 18 anos" id="faixa-etaria"> <label for="faixa-etaria"> Menor ou igual a 18 anos </label> <br>
+
+   <input type="radio" name="faixa-etaria" value="Maior que 18 anos" checked id="outra-faixa"> <label for="outra-faixa"> Maior de 18 anos </label>
+  </fieldset>
+
+  <button> Efetuar cadastro </button>
+ </form>    
+</body> 
+</html> 

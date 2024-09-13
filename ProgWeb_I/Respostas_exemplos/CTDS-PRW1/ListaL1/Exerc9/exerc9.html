@@ -1,0 +1,27 @@
+<!DOCTYPE html> 
+<html lang="pt-BR"> 
+<head> 
+  <meta charset="utf-8"> 
+  <title> Fundamentos do JavaScript </title>   
+  <link rel="stylesheet" href="exerc9.css">
+</head> 
+
+<body> 
+ <h1> Fundamentos do JavaScript - ListaL1 - Exercício 9 </h1>
+ 
+ <form>
+  <fieldset>
+   <legend> Conversão de temperatura com JavaScript </legend>
+
+   <label class="alinha"> Forneça a temperatura em °F: </label>
+   <input type="number" step="0.1" id="tempF" autofocus> <br>
+
+   <button type="button" onclick="converterTemp();"> Converter temperatura de °F para °C </button>
+  </fieldset>
+ </form>
+
+ <p hidden id="conteiner" onclick="esconderParag(this);"></p>
+
+ <script src="exerc9.js"></script>
+</body> 
+</html> 

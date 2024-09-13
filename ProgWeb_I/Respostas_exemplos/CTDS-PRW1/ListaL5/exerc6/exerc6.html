@@ -1,0 +1,58 @@
+<!DOCTYPE html> 
+<html lang="pt-BR"> 
+<head> 
+  <meta charset="utf-8"> 
+  <title> PHP </title> 
+  <link rel="stylesheet" href="exerc6.css">
+</head> 
+
+<body> 
+ <h1> Prática com PHP - Matrizes - ListaL5 - exercício 6 </h1>
+
+ <form method="post" action="recebe-dados.php">
+  <fieldset>
+   <legend> Matrizes com PHP - Farmácia virtual AAA - módulo de cadastro de medicamentos </legend>
+
+   <label class="alinha"> Medicamento 1: </label>
+   <input type="text" name="medic1" autofocus> <br>
+
+   <label class="alinha"> Código 1: </label>
+   <input type="text" name="codigo1"> <br>
+
+   <label class="alinha"> Preço 1: </label>
+   <input type="number" min="0"  step=".01" name="preco1">
+
+   <br> <br>
+
+   <label class="alinha"> Medicamento 2: </label>
+   <input type="text" name="medic2"> <br>
+
+   <label class="alinha"> Código 2: </label>
+   <input type="text" name="codigo2"> <br>
+
+   <label class="alinha"> Preço 2: </label>
+   <input type="number" min="0"  step=".01" name="preco2">
+
+   <br> <br>
+
+   <label class="alinha"> Medicamento 3: </label>
+   <input type="text" name="medic3"> <br>
+
+   <label class="alinha"> Código 3: </label>
+   <input type="text" name="codigo3"> <br>
+
+   <label class="alinha"> Preço 3: </label>
+   <input type="number" min="0"  step=".01" name="preco3">
+  </fieldset>
+
+  <fieldset>
+    <legend> Matrizes com PHP - Farmácia virtual AAA - módulo de pesquisa de medicamentos </legend>
+
+    <label> Código do medicamento a ser pesquisado: </label>
+    <input type="text" name="pesquisa-remedio"> 
+   </fieldset>
+
+   <button> Processar dados da matriz de medicamentos </button>
+ </form>
+</body> 
+</html> 

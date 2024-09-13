@@ -1,0 +1,22 @@
+<!DOCTYPE html> 
+<html lang="pt-BR"> 
+<head> 
+  <meta charset="utf-8"> 
+  <title> Formulários com HTML5 e CSS3 </title> 
+  <link rel="stylesheet" href="formata-form.css">
+</head> 
+
+<body> 
+ <h1> PHP com Banco de Dados MySQL </h1>
+ <!--por padrão, o método usado pelo navegador para transmitir os dados ao servidor é o método GET. Este método transporta as informações como texto puro, o que pode acarretar uso indevido, quando tratamos de dados sensíveis. Para evitar esta situação, fazendo com que o navegador criptografe as informações fornecidas ao formulário, é que usamos o método POST-->
+ <form action="recebe-dados.php" method="post">
+  <fieldset>
+   <legend> Cadastro e processamento de dados de funcionários </legend>
+    <label class="alinha"> Salário mensal do funcionário: </label>
+    <input type="number" name="salario-funcionario" step="0.01" min="0" max="100000">
+    <!--o atributo step controla o número de casas decimais-->
+  </fieldset>
+
+ </form>     
+</body> 
+</html> 

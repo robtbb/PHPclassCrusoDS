@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Roboto&display=swap');
+
+table {
+ font-family: 'Comic Sans MS', Verdana, Geneva, Tahoma; /*lista várias fontes do sistema a serem aplicadas ao texto da tabela*/
+ font-family: Lato;
+ border: 2px solid green;
+ width: 50%; /*aqui, ao usarmos uma unidade relativa, o navegador sempre calcula o valor da propriedade usando a largura do elemento-pai*/
+ height: 400px;
+ margin: auto; /*centraliza qualquer elemento na horizontal*/
+ border-spacing: 0; /*afasta ou aproxima as células umas das outras e da tabela*/
+ border-collapse: collapse; /*zera espaços entre bordas, sem sobrepor*/
+ font-size: 18px;
+}
+
+p {
+ font-family: Roboto;
+}
+
+td, th {
+  border: 2px solid green;   
+}
+
+th {
+ background-color: rgba(47,79,79, 0.4); /*aplica cor de fundo aos elementos*/
+}
+
+td {
+ padding-left: 10px; /*coloca um preenchimento, antes de cada texto, do lado esquerdo das células*/
+}
+
+td#formata-celula { /*observe o uso do atributo id formata-celula*/
+ text-align: right;
+ padding-right: 10px; /*afasta o texto do lado direito da célula*/
+ text-decoration: underline; /*sublinhado*/
+}
+
+td.formata-outra-celula {
+ background-color:rgba(47,79,79, 0.4);
+ color: green;
+ text-align: center;
+}
+
+td#formata-fundo {
+ background-image: url(https://cdn4.iconfinder.com/data/icons/social-media-logos-6/512/121-css3-512.png); /*coloca uma imagem de fundo ao elemento*/
+ background-size: 100% 100%;
+}
